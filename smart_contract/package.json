@@ -1,0 +1,44 @@
+{
+  "name": "dapp-with-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npx hardhat run scripts/deployTrialToken.js --network sepolia",
+    "unseen": "npx hardhat run scripts/deployUnseen.js --network sepolia",
+    "nft": "npx hardhat run scripts/deployUnseenNFT.js --network sepolia"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-table": "^7.8.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.3",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@typechain/ethers-v5": "^10.1.1",
+    "@typechain/hardhat": "^6.1.4",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^9.1.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^2.2.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.3",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.8.0",
+    "solidity-coverage": "^0.7.22",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4"
+  }
+}
